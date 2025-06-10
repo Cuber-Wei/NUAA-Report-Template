@@ -1,0 +1,79 @@
+\documentclass[a4paper]{article}
+\input{config}
+
+\title{title}
+\def\major{major}
+\def\class{classid}
+\author{name}
+\def\studentId{id}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\begin{spacing}{1.2}%魔法参数,行间距
+    \tableofcontents
+\end{spacing}
+\thispagestyle{main}
+
+\clearpage
+
+\setcounter{page}{1}
+\renewcommand{\thepage}{\arabic{page}}
+\section{需求分析}\seccontent
+
+\sectionbreak
+\section{系统总框图}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth,height=8cm]{fig/struct.png}
+    \caption{系统结构图}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth,height=8cm]{fig/StructPic.png}
+    \caption{系统流程图}
+\end{figure}
+
+\sectionbreak
+\section{各模块的设计分析}
+\sectionbreak
+\section{定义的函数及说明}
+
+\sectionbreak
+\section{存在的问题与不足及对策}
+\subsection*{对策}
+
+\sectionbreak
+\section{使用说明}
+\begin{description}
+    \seccontent
+    \item[程序信息]
+        作者：\href{https://www.cnblogs.com/Lovechan/}{魏程浩}，
+        \href{https://github.com/Cuber-Wei}{@Cuber-Wei}.
+
+        版本信息：2023/3/23, v1.0。
+
+    \item[系统简介]
+        此系统为计算题训练系统，目的在于辅助学生进行计算题练习，
+        提高计算能力。
+
+\end{description}
+
+\sectionbreak
+%  附录  %
+\clearpage
+\appendix
+\phantomsection
+\addcontentsline{toc}{section}{附录(源码展示)}
+\section*{附录(源码展示)}
+% 重置附录 section 格式
+\renewcommand{\thesubsection}{\thesection\Alph{subsection}}
+
+\subsection{主程序源代码(main.cpp)}
+
+
+\end{document}
