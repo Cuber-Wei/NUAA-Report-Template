@@ -25,25 +25,22 @@
 \usepackage{ctex}		 	% If you are lazy, the CTEX suit is enough.
 
 % Chinese font
-\usepackage{xeCJK}		 	% For the Chinese through XeLaTex
-\setCJKmainfont{FandolSong} 	% set the mainfont of Chinese as songti. (serif) for  
-\setCJKsansfont{FandolSong}	% sans serif font for \textsf
-\setCJKmonofont{FandolSong}	% monospace font for \texttt
-% \punctstyle{kaiming}   	% Remove the space used by symbols like comma. Special for the mainland students like us HUSTers.
-\setCJKfamilyfont{song}{FandolSong}
+\usepackage{xeCJK}		 	        % For the Chinese through XeLaTex
+\setCJKmainfont{SimSun} 	        % set the mainfont of Chinese as songti. (serif) for  
+\setCJKsansfont{STZhongsong}	            % sans serif font for \textsf
+\setCJKmonofont{Maple Font NF CN}	% monospace font for \texttt
+% \punctstyle{kaiming}   	        % Remove the space used by symbols like comma. Special for the mainland students like us HUSTers.
+\setCJKfamilyfont{song}{SimSun}
 \newcommand{\song}{\CJKfamily{song}} %宋体 song
-\setCJKfamilyfont{kai}{FandolKai}
-\newcommand{\kai}{\CJKfamily{kai}} %楷体2312  kai
-\setCJKfamilyfont{hwzs}{FandolFang}
+\setCJKfamilyfont{kai}{Kai}
+\newcommand{\kai}{\CJKfamily{kai}}   %楷体2312  kai
+\setCJKfamilyfont{hwzs}{STZhongsong}
 \newcommand{\hwzs}{\CJKfamily{hwzs}} %华文中宋  hwzs
-\setCJKfamilyfont{hei}{FandolHei}
-\newcommand{\hei}{\CJKfamily{hei}} %黑体  hei
+\setCJKfamilyfont{hei}{SimHei}
+\newcommand{\hei}{\CJKfamily{hei}}   %黑体  hei
 
 % English font
 \usepackage{fontspec}
-\setmainfont{Times New Roman}
-\setsansfont{Times New Roman}
-\setmonofont{Times New Roman}
 % font Color 利用definecolor自己可以定义颜色
 \usepackage{xcolor}
 \definecolor{MSBlue}{rgb}{.204,.353,.541}
@@ -61,8 +58,8 @@
 \usepackage{fancyhdr} % for header and footer
 % header
 \newcommand{\headstyle}{
-    \fancyhead[L]{ \hwzs\wuhao 《面向对象程序设计语言》课程设计报告}
-    \fancyhead[R]{ \hwzs\wuhao 162210118~魏程浩}
+    \fancyhead[L]{ \hwzs\wuhao 《class》课程报告}
+    \fancyhead[R]{ \hwzs\wuhao id~name}
 }
 % 设置页脚样式
 \newcommand{\footstyle}{\fancyfoot[C]{\wuhao\thepage}
@@ -208,7 +205,7 @@
             \vspace*{0em}
             \includegraphics[height=1.61cm]{fig/name.png}\\
             \vspace*{4em}
-            {\xiaochuhao \hwzs \bfseries 《面向对象程序设计语言》课程设计报告}\\
+            {\xiaochuhao \hwzs \bfseries 《class》课程报告}\\
             \vspace*{6em}
             {\erhao \kai \bfseries \thetitle}
 
